@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DataStorage</string>
+    <string name="data_storage">点击存储信息</string>
+    <string name="data_get">点击获取信息</string>
+    <string name="sharedpreferences_demo">SharedPreferencesDemo</string>
+    <string name="show_storage_no_formation">显示不带存储格式的文件内容</string>
+    <string name="show_with_formation">显示带存储格式的文件内容</string>
+    <string name="storage_no_formation">存储为不带格式文件</string>
+    <string name="storage_with_formation">存储为带格式文件</string>
+
+    <string name="openfile_demo">openfile_demo</string>
+    <string name="create_table_book">创建book表</string>
+    <string name="sqlite_demo">sqlite_demo</string>
+    <string name="add_data">Add data</string>
+    <string name="update_data">Update data</string>
+    <string name="delete_data">Delete data</string>
+    <string name="query_data">Query data</string>
+</resources>

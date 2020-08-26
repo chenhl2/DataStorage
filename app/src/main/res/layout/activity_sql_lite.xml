@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sqlitedemo.SqlLiteActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/create_book_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_table_book"/>
+    <Button
+        android:id="@+id/add_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_data"/>
+    <Button
+        android:id="@+id/update_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_data"/>
+    <Button
+        android:id="@+id/delete_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_data" />
+    <Button
+        android:id="@+id/query_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/query_data" />
+
+</LinearLayout>

@@ -7,10 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.datastorage.contentproviderdemo.ContentProviderDemo;
 import com.example.datastorage.sqlitedemo.SqlLiteActivity;
 
+import java.security.DomainCombiner;
+
 public class MainActivity extends AppCompatActivity {
-    private Button mButton_go_sp,mButton_go_of,mButton_go_sqlite;
+    private Button mButton_go_sp;
+    private Button mButton_go_of;
+    private Button mButton_go_sqlite;
+    private Button mButton_go_contentProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mGoSqliteIntent = new Intent(MainActivity.this, SqlLiteActivity.class);
                 startActivity(mGoSqliteIntent);
+            }
+        });
+        mButton_go_contentProvider = findViewById(R.id.go_contentprovider_btn);
+        mButton_go_contentProvider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mGoProviderIntent = new Intent(MainActivity.this, ContentProviderDemo.class);
+                startActivity(mGoProviderIntent);
             }
         });
 

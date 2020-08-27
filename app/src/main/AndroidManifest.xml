@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.datastorage">
+    <permission android:name="com.example.datastorage.PROVIDER" android:protectionLevel="normal"/>
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sqlitedemo.SqlLiteActivity"></activity>
+        <activity android:name=".contentproviderdemo.ContentProviderDemo"/>
+        <activity android:name=".sqlitedemo.SqlLiteActivity" />
         <activity android:name=".OpenFileDemo" />
         <activity android:name=".SharedPreferencesDemo" />
         <activity android:name=".MainActivity">
@@ -19,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="com.example.datastorage"
+            android:name=".contentproviderdemo.MyContentProvider"
+            android:permission="com.example.datastorage.PROVIDER"
+            android:exported="true"/>
+            <!--  声明外界进程可访问该Provider的权限（读&写） -->
+            <!--  设置此provider是否可以被其他进程使用-->
     </application>
 
 </manifest>

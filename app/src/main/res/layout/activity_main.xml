@@ -21,5 +21,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sqlite_demo"/>
+    <Button
+        android:id="@+id/go_contentprovider_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contentprovider_demo"/>
 
 </LinearLayout>
